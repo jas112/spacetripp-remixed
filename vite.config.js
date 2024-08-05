@@ -36,12 +36,12 @@ export default defineConfig({
     }),
   ],
   publicDir: 'public',
-  assetsInclude: ['**/*.html','**/*.jpg', '**/*.png', '**/*.wav', '**/*.mp3'],
+  assetsInclude: ['**/*.html', '**/*.pdf', '**/*.jpg', '**/*.png', '**/*.gif', '**/*.wav', '**/*.mp3'],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: '/src/main.jsx', // Ensure this points to your index.html
+      input: 'index.html', // Ensure this points to your index.html
     },
   },
   server:{port: 3000}
