@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import { registerSW } from 'virtual:pwa-register'
 import './index.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const updateSW = registerSW({
   onNeedRefresh() {
@@ -15,6 +16,10 @@ const updateSW = registerSW({
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename={"/spacetripp-remixed/"}>
+      <Routes>
+        <Route path="*" element={<App/>}/>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
 )
