@@ -1,0 +1,130 @@
+/* Audio Player Style Definitions */
+
+.audio-player-frame{
+    display: flex;
+    flex-flow: row nowrap;
+    width: auto;
+    height: auto;
+    opacity: .1;
+    /* border: 1px solid #ffffff; */
+
+}
+
+.audio-player-frame:hover{
+    opacity: 1;
+    color: #ff4500;
+    text-shadow: 0px 0px 17px #ff4500;
+    filter: drop-shadow(0 0 1em #ff4500); 
+}
+
+.audio-player-frame:hover .audio-player-btn{
+    color: #ff4500; 
+}
+
+.control-console{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #ffffff; */
+}
+
+.control-console-panel{
+    display: flex;
+    width: 50%;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+.btn-panel{
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0px;
+}
+
+.audio-player-btn{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height:20px;
+    /* border: 1px solid #ffffff; */
+    color: #ffffff;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.repeat-active{
+    opacity: 1;
+    text-shadow: 0px 0px 1em #ffffff;
+    filter: drop-shadow(0 0 1em #ffffff);
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.repeat-inactive{
+    opacity: .3;
+    text-decoration-line: line-through;
+}
+
+.control-console-panel{
+
+}
+
+.track-nfo{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.track-title{
+    font-size: 11px;
+    margin: 0 3px
+}
+
+.track-duration{
+    font-size: 11px;
+    margin: 0 3px
+}
+
+
+.slider-panel{
+    display: flex;
+    flex-flow: center;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+    /* border: 1px solid green; */
+}
+
+.volume-control{
+    width: 150px;
+    height: 9px;
+    margin-left: 10px; 
+}
+
+.seek-bar-frame{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.music-disabled{
+    display: none;
+    opacity: .1;
+    pointer-events: none;
+}
+
+@media (max-width: 698px) {
+
+    .audio-player-frame{
+        display: none;
+    }
+
+}
+

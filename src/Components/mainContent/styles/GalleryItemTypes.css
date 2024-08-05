@@ -1,0 +1,112 @@
+
+/* Gallery Item Type A */
+
+.gallery-item-frame{
+    width: 62px;
+    height: 155px;
+    margin: 0px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .75s, height .75s;
+}
+
+.gallery-type-hero .gallery-item-frame{
+    width: 100%;
+}
+
+.gallery-item-frame:hover{
+    opacity: 1;
+}
+
+.gallery-item-indicator{
+    width: 100%;
+    height: 2px;
+    background:#ffffff30;
+    border: solid 1px #ffffff;
+    filter: drop-shadow(0 0 0em #ffffff);
+    transition: filter .25s, height .75s;
+}
+
+.gallery-type-hero .gallery-item-indicator{
+    width: 95%; 
+}
+
+.gallery-item-tile{
+    width: 60px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background:#00000080;
+    opacity: .7;
+    border-radius: 30px 0px 30px 0px;
+
+
+    transition: opacity .025s, height .75s;
+}
+
+.gallery-type-hero .gallery-item-tile{
+    width: 95%; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* .gallery-item-frame:hover .gallery-item-tile{
+    opacity: 1;
+    height: 175px;
+} */
+
+/* Blink Behavior */
+
+.blink{
+    /* background-color: #ff4500; */
+    background-color: #ffffff;
+    filter: drop-shadow(0 0 7em #ffffff);
+    animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: activeGalleryItemBlink 1.5s ease-in-out infinite;
+}
+
+.gallery-item-frame:hover .gallery-item-indicator{
+    background-color: #ff450080;
+    border: solid 2px #ff4500;
+    box-shadow: 0 0 9em #ff4500;
+    filter: drop-shadow(0 0 2em #ff4500);
+}
+
+.gallery-item-frame:hover .gallery-item-tile{
+    background-color: #ff450080;
+    border: solid 2px #ff4500;
+    box-shadow: 0 0 em #ff4500;
+    filter: drop-shadow(0 0 .25em #ff4500);
+}
+
+.blink-focus-item{
+    opacity: 1;
+    /* height: 200px; */
+}
+
+.active-gallery-element-console .gallery-item-frame{
+    opacity: 1;
+    height: 200px;
+}
+
+.active-gallery-element-console .gallery-item-tile{
+    height: 155px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 1px #ffffff;
+    /* filter: drop-shadow(0 0 .5em #ffffff); */
+    ;
+}
+
+.active-gallery-element-console .gallery-item-indicator{
+    height: 5px;
+    box-shadow: 0 0 9em #ffffff;
+    filter: drop-shadow(0 0 .29em #ffffff);
+    /* transition: filter .5s; */
+}

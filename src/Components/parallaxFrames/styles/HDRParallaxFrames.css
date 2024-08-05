@@ -1,0 +1,130 @@
+
+/* Associated Animations */
+
+@keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+}
+
+@keyframes titleBlink{
+    0% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:1;}
+}
+
+
+/* HDR Parallax Frames Style Definitions */
+
+.hdr-parallax-frame-holder{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center; /* Centers the image horizontally */
+    overflow: hidden; /* Hides overflow on the x-axis */
+    /* overflow-y: visible; */
+    width: 100%;
+    /* background: #ff000060;
+    background: blue; */
+    /* border:1px solid red; */
+}
+
+.hdr-parallax-frame{
+    max-width: none; /* Prevents the image from scaling down */
+    width: 842px; /* Ensures the image remains 842px wide */
+    margin: 0x auto;
+    /* border:1px solid red; */
+    align-self: center;
+    position: absolute;
+    top: 0%;
+}
+
+.hdr-parallax-frame-remix{
+    max-width: none; /* Prevents the image from scaling down */
+    width: 1400px; /* Ensures the image remains 842px wide */
+    margin: 0x auto;
+    /* border:1px solid red; */
+    align-self: center;
+    position: absolute;
+    top: 0%;
+}
+
+.spc-frame-100pct-width{
+    max-width: 100%;
+    width: 842px;
+    height: 434px;
+}
+
+.hdr-parallax-frame-img{
+    width: 842px; /* Ensures the image remains 842px wide */
+}
+
+.hdr-parallax-frame-img-remix{
+    width: 1400px; /* Ensures the image remains 1400px wide */
+}
+
+.hdr-parallax-frame-secondary{
+    width: 100%;
+    height: 434px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    /* border:1px solid yellow; */
+}
+
+.hdr-parallax-frame-rig-stLogo{
+    position: relative;
+    top:100px;
+    z-index:-5;
+}
+
+#hdr-plx-figure{
+    position: relative;
+    z-index:-25;
+    /* border: 1px solid lime; */
+}
+
+#hdr-plx-helmet{
+    position: relative;
+    bottom: 3320px;
+    z-index:-22;
+    animation: titleBlink 4s infinite;
+    /* border: 1px solid lime; */
+}
+#hdr-plx-star{
+    position: relative;
+    top:800px;
+    z-index:-20;
+    /* border: 1px solid lime; */
+}
+#hdr-plx-planetsG0{
+    position: relative;
+    top:400px;
+    z-index:-15;
+    /* border: 1px solid lime; */
+}
+#hdr-plx-planetsG1{
+    position: relative;
+    top:400px;
+    z-index:-10;
+    /* border: 1px solid lime; */
+}
+#hdr-plx-stLogo{
+    width: 100%;
+    animation: titleBlink 4s infinite;
+    /* border: 1px solid lime; */
+}
+#hdr-plx-planetsG2{
+    position: relative;
+    top:800px;
+    /* border: 1px solid lime; */
+}
+#hdr-plx-asteroids3{
+    position: relative;
+    top:2000px;
+    /* border: 1px solid lime; */
+}

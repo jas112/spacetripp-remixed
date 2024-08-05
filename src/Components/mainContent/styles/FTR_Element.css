@@ -1,0 +1,64 @@
+/* FTR Element Style Definitions */
+
+.ftr-element-block{
+    width: 100%;
+    /* overflow: hidden; */
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+    /* border: 1px solid #00ff00; */
+}
+
+.ftr-element-block-bg{
+    background: linear-gradient(#000000a6,#ff44000f, #ff440020, #ff45004d, #ff450099);
+}
+
+.ftr-element-section{
+    position: relative;
+    top: 2100px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 60;
+} 
+
+.ftr-block1{
+    z-index: 20;
+}
+
+.ftr-block2{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ftr-element-bg{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+} 
+
+.ftr-element-bg-frm{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+} 
+
+.ftr-bg-frm0{
+    position: relative;
+    top: 682px;
+    z-index: 10;
+    border: 1px solid #ff000000;
+} 
+
+.ftr-bg-frm1{
+    position: relative;
+    top: 1322px;
+    z-index: 10;
+    border: 1px solid #ff000000;
+}
+
+.ftr-bg-frm2{
+    border: 1px solid #ffff0000;
+    z-index: -30;
+}

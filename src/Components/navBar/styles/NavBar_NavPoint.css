@@ -1,0 +1,218 @@
+/* .nav-point-item-H{
+    display: block;
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: .3;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: width .6s, height .6s, opacity .6s, background-color 1s, transform 1s;
+    border: 1px solid red
+}
+
+.nav-point-item-H:hover{
+    opacity: 1;
+    transition: height .6s, opacity .6s, background-color 1s, transform 1.5s;
+}
+
+.nav-line-item-H{
+
+}
+
+.nav-point-H{
+
+}
+
+.main-nav-point-frame-H{
+    display: block;
+    background-color:transparent;
+    width:40px;
+    height:20px;
+    border-radius: 3.5px;
+    margin: 0px auto;
+    background-color:#ffffff41;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    transition: height .2s, border-top .2s, border-bottom .2s;
+}
+
+.nav-point-item-H:hover .main-nav-point-frame-H{
+    height:25px;
+    background-color:#ff440041;
+    border-top: 1px solid #ff4500;
+    border-bottom: 1px solid #ff4500;
+    transition: height .2s, border-top .2s, border-bottom .2s;
+}
+
+.main-nav-point-frame-H-element{
+
+}
+
+.nav-point-item-H:hover .main-nav-point-frame-H .main-nav-point-frame-H-element{
+    height:20px;
+    background-color:#ff4500;
+    transition: height .2s, background-color .2s;
+}
+
+.pulse-major-point-H .main-nav-point-frame-H .main-nav-point-frame-H-element{
+    height:20px;
+    background-color:#ff4500;
+    transition: height .2s, background-color .2s;
+}
+
+.pulse-active-major-point-H .main-nav-point-frame-H .main-nav-point-frame-H-element{
+    width: 9px;
+    height:46px !important;
+    background-color:#00bbff !important;
+    transition: height .2s, background-color .2s;
+}
+
+.nav-point-item-H-active .main-nav-point-frame-H .main-nav-point-frame-H-element{
+    height:20px;
+    width: 1px;
+    background-color:#ff4500;
+    transition: height .2s, width .8s, background-color .2s;
+} */
+
+
+
+.nav-bar-nav-point-frame{
+    display: flex;
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items: center;
+    opacity: .3;
+    background: transparent;
+    border: 1px solid transparent;
+    transition: width .6s, height .6s, opacity .6s, background-color 1s, transform 1s;
+    /* border: 1px solid red */
+}
+
+.nav-bar-nav-point-link{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+    width:13px;
+    height:15px;
+    border-radius: 3.5px;
+    margin: 0px auto;
+    background-color:#ffffff41;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    filter: drop-shadow(0 0 2em #fff);
+
+    transition: height .2s, border-top .2s, border-bottom .2s;
+}
+
+.nav-bar-nav-point{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 7em #ffffff;
+    background-color:transparent;
+}
+
+.nav-bar-nav-point-element{
+    display: block;
+    width: 3px;
+    height: 3px;
+    background: #ffffff;
+    transition: height .6s;
+}
+
+.nav-bar-nav-point-frame:hover{
+    opacity: 1;
+    transition: height .6s, opacity .6s, background-color 1s, transform 1.5s;
+}
+
+.nav-bar-nav-point-frame:hover .nav-bar-nav-point-link{
+    /* width: 18px; */
+    height: 20px;
+    filter: drop-shadow(0 0 2em #fff);
+}
+
+.nav-bar-nav-point-frame:hover .nav-bar-nav-point-element{
+    width: 2px;
+    height: 9px;
+    filter: drop-shadow(0 0 2em #fff);
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.nav-link:hover .nav-bar-nav-point-frame{
+    opacity: 1;
+    transition: height .6s, opacity .6s, background-color 1s, transform 1.5s;
+}
+
+.nav-link:hover .nav-bar-nav-point-link{
+    /* width: 18px; */
+    height: 20px;
+    filter: drop-shadow(0 0 2em #fff);
+}
+
+.nav-link:hover .nav-bar-nav-point-element{
+    width: 2px;
+    height: 9px;
+    filter: drop-shadow(0 0 2em #fff);
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+
+.active .nav-bar-nav-point-frame{
+    opacity: 1;
+}
+
+.active .nav-bar-nav-point-link{
+    height: 20px;
+    filter: drop-shadow(0 0 2em #fff);
+    box-shadow: 0px 0px 3em #ffffff;
+}
+
+.active .nav-bar-nav-point-element {
+    width: 2px;
+    height: 29px;
+    /* background: #00bbff; */
+    border: .5px solid #ffffff;
+    filter: blur(7px);
+    box-shadow: 0px 0px 3em #00bbff;
+    filter: drop-shadow(0 0 2em #fff);
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+.active:hover .nav-bar-nav-point-element {
+    width: 2px;
+    height: 35px;
+    /* background: #00bbff; */
+    border: .5px solid #ff4500;
+    filter: blur(7px);
+    box-shadow: 0px 0px 2em #ff4500;
+    filter: drop-shadow(0 0 1em #ff4500);
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+
+

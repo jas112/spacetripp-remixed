@@ -1,0 +1,171 @@
+
+/* Animations */
+
+@keyframes animStar {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-2000px);
+    }
+}
+
+@-webkit-keyframes animateStarship {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 900%;
+    }
+}
+
+@-moz-keyframes animateStarship {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 900%;
+    }
+}
+
+@keyframes animateStarship {
+    0% {
+        margin-left: -1000px;
+    }
+    100% {
+        margin-left: 900%;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+/* FTR Section Definitions */
+
+.ftr-section{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+    /* height: 3500px; */
+    height: 1000px;
+    /* border: 1px solid white; */
+    /* position: absolute;
+    top:9978px;
+    left: 0px; */
+    z-index: -15;
+}
+
+.ftr-section-starship{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    width:100%;
+    height: 900px;
+    /* border: 1px solid green; */
+    position: relative;
+    top:1319px;
+    left: 0px;
+    z-index: 10;
+}
+
+.endpoint-bottom{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.65),rgba(38, 69, 122, 0.309), rgba(240, 21, 21, 0.15)); */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(255, 69, 0, 0.2), rgba(255, 69, 0, 0.4), rgba(255, 69, 0, 0.6)); */
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(255, 69, 0, 0.0), rgba(255, 69, 0, 0.3), rgba(255, 69, 0, 0.6));
+    height: 1120px;
+    margin: 200px 0px 0px 0px;
+    /* border: 1px solid yellow; */
+}
+
+.endpoint-bottom-starship{
+    height: 1120px;
+    margin: 200px 0px 0px 0px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////// */
+
+
+/* Starship Slide Definitions */
+
+.bg-slide1 {
+    width: 130%;
+    z-index: -3000;
+	-webkit-animation: animateStarship 350s linear infinite;
+	-moz-animation: animateStarship 350s linear infinite;
+	animation: animateStarship 350s linear infinite;
+	-webkit-transform: scale(.2);
+	-moz-transform: scale(.2);
+	transform: scale(.2);
+}
+
+.bg-slide2 {
+    width: 130%;
+    z-index: -3000;
+	-webkit-animation: animateStarship 350s linear infinite;
+	-moz-animation: animateStarship 350s linear infinite;
+	animation: animateStarship 350s linear infinite;
+	-webkit-transform: scale(.4);
+	-moz-transform: scale(.4);
+	transform: scale(.4);
+}
+
+.bg-slide3 {
+    width: 200%;
+    z-index: -3000;
+	-webkit-animation: animateStarship 400s linear infinite;
+	-moz-animation: animateStarship 400s linear infinite;
+	animation: animateStarship 400s linear infinite;
+	-webkit-transform: scale(.3);
+	-moz-transform: scale(.3);
+	transform: scale(.3);
+}
+
+.bg-slide4 {
+    width: 200%;
+    position: relative;
+    top: 35px;
+    z-index: -2000;
+	-webkit-animation: animateStarship 70s linear infinite;
+	-moz-animation: animateStarship 70s linear infinite;
+	animation: animateStarship 70s linear infinite;
+	-webkit-transform: scale(3.5);
+	-moz-transform: scale(3.5);
+	transform: scale(3.5);
+}
+
+.bg-slide5 {
+    width: 200%;
+    z-index: -3000;
+	-webkit-animation: animateStarship 325s linear infinite;
+	-moz-animation: animateStarship 325s linear infinite;
+	animation: animateStarship 325s linear infinite;
+	-webkit-transform: scale(.25);
+	-moz-transform: scale(.25);
+	transform: scale(.25);
+}
+
+.starship{
+    width:500px;
+    height: 131px;
+    background-image: url('../../../assets/images/ftrParallax_imgs/ST_starship-shrp-2f.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+}
+
+.ftr-star{
+    width: 3600px;
+    height: 3600px;
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    animation: rotate360Rev 100s infinite;
+}

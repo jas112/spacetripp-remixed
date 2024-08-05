@@ -1,0 +1,116 @@
+/* Gallery Types */
+
+/* Hero Gallery */
+
+.gallery-type-hero{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 620px;
+    min-height: 230px;
+    margin: 20px 0px 0px 0px;
+    background: #00000030;
+    overflow: hidden
+    /* border: solid 1px yellow; */
+}
+
+/* Dev-Dsn Work Gallery */
+
+.gallery-type-dev-dsn-work{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 620px;
+    min-height: 230px;
+    margin: 20px 0px 0px 0px;
+    background: #00000060;
+    /* overflow-x: scroll; */
+    /* border: solid 1px lime; */
+
+}
+
+/* .fade-out .gallery-type-dev-dsn-work{
+    display: none;
+} */
+
+
+/* Gallery Element Components */
+
+.gallery-item-border{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery-element-border-pulse-segment{
+    width:5%;
+    height: 4px;
+    background: #ffffff;
+}
+
+.gallery-element-border-spacer-segment{
+    width:95%;
+    height: 2px;
+    background: transparent;
+}
+
+.gallery-element-console{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 230px;
+    background: #00000000; 
+    /* border: solid 1px red; */
+    padding: 5px 0px;
+}
+
+.gallery-type-dev-dsn-work .gallery-element-console{
+    overflow-x: scroll;
+}
+
+.gallery-type-dev-dsn-work .gallery-element-console::-webkit-scrollbar {
+    /* margin-top: 15px; */
+    width: 6px;
+    height: 9px;
+}
+
+.gallery-type-dev-dsn-work .gallery-element-console::-webkit-scrollbar-track {
+    background-color: #00000060;
+}
+
+.gallery-type-dev-dsn-work .gallery-element-console::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background-color: #ff4500;
+}
+
+.gallery-type-hero .gallery-element-console{
+    flex-flow: column nowrap;
+}
+
+.fancybox__container {
+    --fancybox-bg: linear-gradient(45deg, #000000, #ff4400af, #ff450040, #000000);;
+    /* background: #11111170; */
+    /* background:linear-gradient(45deg, #000000, #ff4400af, #ff450040, #000000); */
+    z-index: 9999;
+}
+
+.fancybox__caption {
+    max-width: 700px;
+    padding: 1rem 3rem 1rem 1rem;
+}
+
+.fancybox__content{
+    --fancybox-content-bg: #00000080;
+}
+
+
+
+/* background: #11111170;
+background:linear-gradient(45deg, #000000, #ff450040, #000000);
+filter: blur(4px); */
+

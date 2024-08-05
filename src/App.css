@@ -1,0 +1,89 @@
+:root{
+  --scrollbar-track-bgColor: #00000060;
+  --scrollbar-thumb-bgColor: #ffffff40;
+  --scrollbar-thumb-border: 2px solid #ffffff40;
+}
+
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* border: solid 5px lightskyblue; */
+}
+
+body::-webkit-scrollbar {
+  /* margin-top: 15px; */
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-bgColor);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  height: 60px;
+  background-color: var(--scrollbar-thumb-bgColor);
+  border: var(--scrollbar-thumb-border);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #228DFF40;
+  border: 2px solid #228DFF;
+  box-shadow: 0px 0px 10px #228DFF;
+  filter: drop-shadow(0 0 1em #228DFF);
+}
+
+.hdr-element{
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  overflow-x: hidden; /* Hides overflow on the x-axis */
+  width: 100%;
+}
+
+.hdr-element img{
+  max-width: none; /* Prevents the image from scaling down */
+  width: 842px; /* Ensures the image remains 842px wide */
+}
+
+.content-element{
+  width: 100%;
+  min-height: 100%;
+  /* background: #ff000030; */
+  /* border: solid 1px red; */
+  padding: 0px;
+  /* position: relative; */
+}
+
+.ftr-element{
+  /* position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px; */
+  /* background: #00ff0030; */
+  /* border: solid 1px lime; */
+  /* overflow: hidden; */
+}
+
+.ftr-scene{
+  border: 1px solid orange;
+  overflow-y: hidden;
+  height: 700px;
+}
+
+.init-text{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 900;
+  font-size: x-large;
+}
+
+.page-nav-ref{
+  z-index: 8999;
+  margin: 700px 0;
+}
+
+.terminus-nav{
+  position: relative;
+  top:1200px;
+}

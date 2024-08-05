@@ -1,0 +1,63 @@
+.top-terminus-eFrame{
+    color: #000000;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-weight: 800;
+    align-self: flex-start;
+    opacity: .6;
+    animation: elementBlink 3s infinite;
+}
+
+.terminus-eFrame{
+    -webkit-text-fill-color: #ff450000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff4500;
+    -webkit-text-stroke-color: #f3b50c;
+    /* padding: 0px 20px; */
+
+    /* animation: textGlow 3s infinite; */
+    animation: elementBlink 3s infinite;
+}
+
+.tp-ele-spacer{
+    animation: shiftElementMotionA .5s infinite ease-in-out;
+}
+
+.btm-ele-spacer{
+    animation: shiftElementMotionB .5s infinite;
+}
+
+.ele-bar{
+    background: #00000010;
+    height: 8px;
+}
+
+.eFrame-chevron{
+    width: 2px;
+    height: 18px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    opacity:.3;
+}
+
+.eFrame-chevron-1{
+    transform: rotate(-36deg);
+}
+
+.eFrame-chevron-2{
+    transform: rotate(-36deg);
+}
+
+
+.active-terminus-section-panel eFrame-chevron{
+    border: 1px solid #ff4500;
+    opacity:1;
+}
+
+.blink-chevron{
+    background-color: #ff4500;
+    border: 1px solid #ff4500;
+    height: 36px;
+    opacity: 1;
+}
