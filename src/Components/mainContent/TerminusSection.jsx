@@ -14,6 +14,7 @@ import { faBolt } from '@fortawesome/free-solid-svg-icons'
 const TerminusSection = ({
     sectionDataValue, 
     currentPageLocation,
+    parallaxRemix,
     sectionHoverSoundEnter,
     sectionHoverSoundExit, 
     btnHoverSound, 
@@ -83,7 +84,7 @@ const TerminusSection = ({
                 >
                     <div className='terminus-avatar-frame'>
                         <div 
-                            className='terminus-avatar' style={{backgroundImage: `url(${sectionDataValue.galleryImages[0].image})`}}
+                            className='terminus-avatar' style={{backgroundImage: `url(${parallaxRemix ? sectionDataValue.galleryImages[1].image : sectionDataValue.galleryImages[0].image})`}}
                             onMouseEnter={() => {
                                 handleItemInteractionSound(sectionHoverSoundEnter);
                             }} 

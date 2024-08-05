@@ -8,7 +8,8 @@ import {generateText} from '../../utils/contentTools.jsx'
 
 const SectionElement = ({
     sectionDataValue,
-    currentPageLocation,  
+    currentPageLocation, 
+    parallaxRemix, 
     sectionHoverSoundEnter,
     sectionHoverSoundExit,
     btnHoverSound,
@@ -64,6 +65,7 @@ const SectionElement = ({
         if(hasGalleryBool){
             return(
                 <GalleryElement 
+                parallaxRemix={parallaxRemix}
                 sectionMarker={sectionDataValue.sectionMarker} 
                 galleryType={sectionDataValue.galleryType} 
                 galleryImages={sectionDataValue.galleryImages} 

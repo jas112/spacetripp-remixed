@@ -8,7 +8,7 @@ import stPlanets_1D from '../../assets/images/hdrParallax_imgs/ST_planets_1D-RSC
 import stLogo_PFG from '../../assets/images/hdrParallax_imgs/ST_logo-RSCC.png'
 import stPlanets_2D from '../../assets/images/hdrParallax_imgs/ST_planets_2D-RSCC.png'
 import stAsteroids from '../../assets/images/hdrParallax_imgs/ST_asteroids-RSCC.png'
-import stFigureA_L1_remix from '../../assets/images/hdrParallax_imgs/ST_tripp_figure_remix_studio_rs_1Awb_b2.png'
+import stFigureA_L1_remix from '../../assets/images/hdrParallax_imgs/ST_tripp_figure_remix_studio_rs_1Awb_b3.png'
 import stFigureA_L4_remix from '../../assets/images/hdrParallax_imgs/ST_tripp_figure_remix_studio_rs_1Bwb.png'
 import stStar_remix from '../../assets/images/hdrParallax_imgs/ST_star_remix.png'
 import stPlanets_0C_remix from '../../assets/images/hdrParallax_imgs/ST_planets_0C_remix.png'

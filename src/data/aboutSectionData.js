@@ -1,6 +1,7 @@
 import SectionData from "./sectionData";
 import GalleryItemData from "./galleryItemData";
 import aboutSectionHeroImage from '../assets/images/siteFeatures_imgs/ST_tripp_figure-head-closeup-75.png'
+import aboutSectionHeroImageRM from '../assets/images/siteFeatures_imgs/ST_trippfig_rm_head_crprcWB75.png'
 import defaultThumbImgRef from '../assets/images/webIcons_imgs/ST_icon-N2.png'
 
 const aboutSectionData = new SectionData(
@@ -23,6 +24,8 @@ const aboutSectionData = new SectionData(
 );
 
 const heroImage = new GalleryItemData(aboutSectionHeroImage, aboutSectionHeroImage, 'image', 'my avatar closeup.', 'closeup illustration of my face centering on my eyes.', 'myHero');
+const heroImageRM = new GalleryItemData(aboutSectionHeroImageRM, aboutSectionHeroImageRM, 'image', 'my avatar closeup remixed', 'closeup illustration of my face centering on my eyes.', 'myHero');
 aboutSectionData.galleryImages.push(heroImage);
+aboutSectionData.galleryImages.push(heroImageRM);
 
 export default aboutSectionData;

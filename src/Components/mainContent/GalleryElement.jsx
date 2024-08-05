@@ -6,6 +6,7 @@ import GalleryItemTypeA from './GalleryItemTypeA.jsx'
 
 
 const GalleryElement = ({
+    parallaxRemix,
     sectionMarker, 
     galleryType, 
     galleryImages, 
@@ -32,8 +33,19 @@ const GalleryElement = ({
     // console.log(`${sectionMarker} has galleryType: ${galleryType} and galleryClass: ${galleryClass}`);
 
     const generateGalleryItems = () => {
+        var gallerySet = [];
+        if(galleryType == 'hero'){
+            if(parallaxRemix){
+                gallerySet.push(galleryImages[1]);
+            }else{
+                gallerySet.push(galleryImages[0])
+            }
+        }else{
+            gallerySet = galleryImages
+        }
+
         return(
-            galleryImages.map((gItem, gItem_idx) => (
+            gallerySet.map((gItem, gItem_idx) => (
                 <a 
                     key={`${sectionMarker}` + '-' + gItem_idx} 
                     data-fancybox={sectionMarker} 

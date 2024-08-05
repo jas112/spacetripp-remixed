@@ -201,7 +201,8 @@ const App = () => {
   };
 
   return (
-    <Router>
+    // <Router>
+    <>
       <NavBar 
         currentScroll={scrollPositionY} 
         currentDate={dateString}
@@ -235,6 +236,7 @@ const App = () => {
             <SectionElement 
               sectionDataValue={sectionsData[sectionKey]} 
               currentPageLocation={currentPageLocation}
+              parallaxRemix={parallaxRemix}
               sectionHoverSoundEnter={sectionHoverSoundEnter}
               sectionHoverSoundExit={sectionHoverSoundExit}
               btnHoverSound={btnHoverSound}
@@ -251,6 +253,7 @@ const App = () => {
           <TerminusSection 
             sectionDataValue={sectionsData.terminus}
             currentPageLocation={currentPageLocation}
+            parallaxRemix={parallaxRemix}
             sectionHoverSoundEnter={sectionHoverSoundEnter}
             sectionHoverSoundExit={sectionHoverSoundExit}
             btnHoverSound={btnHoverSound}
@@ -262,7 +265,7 @@ const App = () => {
       </div>
       <BackgroundFrame currentScroll={scrollPositionY}/>
       <div className='page-nav-ref' ref={bottomRef}></div>
-    </Router>
+    {/* </Router> */}</>
   )
 }
 

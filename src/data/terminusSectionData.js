@@ -5,9 +5,8 @@ import { faLinkedinIn, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import { faBolt } from '@fortawesome/free-solid-svg-icons'
 import imageThumb_01ref from '../assets/images/siteFeatures_imgs/ST_tripp_figure-head-closeup-75.png';
 import imageFull_01ref from '../assets/images/siteFeatures_imgs/ST_tripp_figure-head-closeup-75.png';
-import avatarImage1Ref from '../assets/images/stEmail_imgs/ST_emAvatarCircleOngwb.png';
-import avatarImage2Ref from '../assets/images/stEmail_imgs/ST_emAvatarCircleOngWhtCwb.png';
-import avatarImage3Ref from '../assets/images/stEmail_imgs/ST_emAvatarCircleWhtwb.png';
+import avatarImageRef from '../assets/images/stEmail_imgs/ST_emAvatarCircleOngwb.png';
+import avatarImageRMRef from '../assets/images/stEmail_imgs/ST_emAvatarCircleOngwbRM.png';
 import resumeRef from '../assets/documents/resumeNfo_docs/JamesSanders_Resume_WebDev.pdf';
 import { MemoryRouter } from "react-router-dom";
 
@@ -34,28 +33,20 @@ const imageFull_01 = new ImageData(
     'emailDev-full-01'
 );
 
-const avatarImage1 = new ImageData(
-    avatarImage1Ref, 
-    avatarImage1Ref, 
+const avatarImage = new ImageData(
+    avatarImageRef, 
+    avatarImageRef, 
     'avatar image-1 fullsize', 
     'avatarImage1-full-01', 
     'avatarImage1-full-01'
 );
 
-const avatarImage2 = new ImageData(
-    avatarImage2Ref, 
-    avatarImage2Ref, 
-    'avatar image-2 fullsize', 
-    'avatarImage1-full-02', 
-    'avatarImage1-full-02'
-);
-
-const avatarImage3 = new ImageData(
-    avatarImage3Ref, 
-    avatarImage3Ref, 
-    'avatar image-3 fullsize', 
-    'avatarImage1-full-03', 
-    'avatarImage1-full-03'
+const avatarImageRM = new ImageData(
+    avatarImageRMRef, 
+    avatarImageRMRef, 
+    'avatar image-RM fullsize', 
+    'avatarImageRM-full', 
+    'avatarImageRM-full'
 );
 
 
@@ -113,9 +104,8 @@ const myCargoLink = new LinkData(
     'B'
 );
 
-terminusSectionData.galleryImages.push(avatarImage1);
-terminusSectionData.galleryImages.push(avatarImage2);
-terminusSectionData.galleryImages.push(avatarImage2);
+terminusSectionData.galleryImages.push(avatarImage);
+terminusSectionData.galleryImages.push(avatarImageRM);
 
 terminusSectionData.sectionLinksA.push(myEmailLink);
 terminusSectionData.sectionLinksA.push(myResumeLink);
