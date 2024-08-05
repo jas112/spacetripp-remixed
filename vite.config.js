@@ -41,7 +41,7 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: './index.html', // Ensure this points to your index.html
+      input: './src/index.html', // Ensure this points to your index.html
     },
   },
   server:{port: 3000}
