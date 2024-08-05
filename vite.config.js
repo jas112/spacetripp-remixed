@@ -37,5 +37,12 @@ export default defineConfig({
   ],
   publicDir: 'public',
   assetsInclude: ['**/*.html'],
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: './index.html', // Ensure this points to your index.html
+    },
+  },
   server:{port: 3000}
 })
