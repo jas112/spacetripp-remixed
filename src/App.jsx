@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+// import { BrowserRouter as Router } from 'react-router-dom'
 import './App.css'
 import NavBar from './Components/navBar/NavBar';
 import ForegroundFrame from './Components/parallaxFrames/ForegroundFrame.jsx';
