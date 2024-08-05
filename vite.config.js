@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "./",
+  base: "/spacetripp-remixed/",
   plugins: [
     react(),
     VitePWA({
@@ -41,7 +41,7 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     rollupOptions: {
-      input: './index.html', // Ensure this points to your index.html
+      input: 'index.html', // Ensure this points to your index.html
       output: {
         assetFileNames: 'assets/[name]-[hash][extname]'
       }
