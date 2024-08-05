@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/spacetripp-remixed/",
+  base: "./",
   plugins: [
     react(),
     VitePWA({
@@ -36,7 +36,7 @@ export default defineConfig({
     }),
   ],
   publicDir: 'public',
-  assetsInclude: ['**/*.html'],
+  assetsInclude: ['**/*.html','**/*.jpg', '**/*.png', '**/*.wav', '**/*.mp3'],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
